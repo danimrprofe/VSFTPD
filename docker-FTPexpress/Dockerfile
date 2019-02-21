@@ -1,3 +1,5 @@
+# $ docker run -it --rm  -v ${PWD}/archivoscompartidos:/home/fulanito 
+
 FROM alpine:latest
 
 RUN apk --update upgrade && apk --update --no-cache add vsftpd
