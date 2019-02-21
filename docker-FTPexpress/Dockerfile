@@ -3,7 +3,7 @@
 FROM alpine:latest
 
 RUN apk --update upgrade && apk --update --no-cache add vsftpd
-RUN adduser -h /home/./fulanito -s /bin/flase -D fulanito
+RUN adduser -h /home/./fulanito -s /bin/false -D fulanito
 
 ADD entrada.sh /
 VOLUME /home/fulanito
