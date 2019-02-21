@@ -8,4 +8,4 @@ VOLUME /home/fulanito
 
 EXPOSE 20 21 10090-10100
 
-CMD entrada.sh
+CMD /entrada.sh
