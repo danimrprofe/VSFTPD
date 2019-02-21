@@ -5,7 +5,9 @@ FROM alpine:latest
 RUN apk --update upgrade && apk --update --no-cache add vsftpd
 RUN adduser -h /home/./fulanito -s /bin/false -D fulanito
 
+COPY vsftpd.conf /etc/vsftpd/
 ADD entrada.sh /
+
 VOLUME /home/fulanito
 
 EXPOSE 20 21 10090-10100
